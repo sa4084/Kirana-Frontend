@@ -1,89 +1,106 @@
-# Getting Started with Create React App
+# Kirana
 
-Demo - [https://youtu.be/JmcUtjzPaSQ](https://youtu.be/JmcUtjzPaSQ)
+Kirana is a fully functional ecommerce web application built with the MERN stack <b>(MongoDB, Express.js, React.js, Node.js) + Firebase Authentication + Stripe for Payments </b>. It offers a wide range of food items and grocery products for sale. The application utilizes Firebase Authentication for user login and registration, ensuring a secure and seamless user experience. The frontend is developed using React.js and Material UI, providing an appealing and user-friendly interface. The backend is powered by Node.js, enabling efficient server-side processing and handling API requests. MongoDB is chosen as the database for its flexibility and scalability, offering a NoSQL approach to data storage. Stripe is integrated into the application to handle secure payment transactions, ensuring a smooth checkout process.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Check out the [demo video](https://www.youtube.com/watch?v=JmcUtjzPaSQ) to get a visual overview of the Kirana web app.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before running the application locally, make sure you have the following dependencies installed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js: v14.x or higher
+- MongoDB: Make sure you have MongoDB set up locally or have a MongoDB Atlas account
 
-### `npm test`
+## Running the React.js Frontend Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the React.js frontend of the Kirana application locally, follow these steps:
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone <repository-url>
+Navigate to the frontend directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+cd frontend
+Install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm install
+Set up environment variables:
 
-### `npm run eject`
+Create a .env file in the root of the frontend directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Add the following environment variables and provide their respective values:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+makefile
+Copy code
+REACT_APP_FIREBASE_API_KEY=<your-firebase-api-key>
+REACT_APP_FIREBASE_AUTH_DOMAIN=<your-firebase-auth-domain>
+REACT_APP_FIREBASE_PROJECT_ID=<your-firebase-project-id>
+REACT_APP_FIREBASE_STORAGE_BUCKET=<your-firebase-storage-bucket>
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<your-firebase-messaging-sender-id>
+REACT_APP_FIREBASE_APP_ID=<your-firebase-app-id>
+REACT_APP_STRIPE_PUBLIC_KEY=<your-stripe-public-key>
+REACT_APP_BACKEND_URL=<your-backend-url>
+Start the local development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+npm start
+Open your web browser and visit http://localhost:3000 to see the Kirana application running locally.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running the Node.js Backend Locally
+To run the Node.js backend of the Kirana application locally, follow these steps:
 
-## Learn More
+Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copy code
+git clone <repository-url>
+Navigate to the backend directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+Copy code
+cd backend
+Install the dependencies:
 
-### Code Splitting
+bash
+Copy code
+npm install
+Set up environment variables:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create a .env file in the root of the backend directory.
 
-### Analyzing the Bundle Size
+Add the following environment variables and provide their respective values:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+makefile
+Copy code
+PORT=<port-number>
+MONGODB_URI=<mongodb-uri>
+STRIPE_SECRET_KEY=<your-stripe-secret-key>
+Start the Node.js server:
 
-### Making a Progressive Web App
+bash
+Copy code
+npm start
+The backend server will start running on the specified port.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Congratulations! You have successfully set up and launched the Kirana web application locally. Enjoy exploring its features and functionalities.
 
-### Advanced Configuration
+## Why MongoDB over Traditional SQL?
+Here are the reasons why I chose MongoDB as the database for the Kirana application over traditional SQL databases:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Flexible Schema: MongoDB offers a flexible schema design, allowing easy modification of the data structure without downtime or migrations. This is particularly useful in ecommerce applications where product catalogs may change frequently.
 
-### Deployment
+Scalability: MongoDB is horizontally scalable, meaning it can handle large amounts of data and traffic by distributing it across multiple servers. This scalability is crucial for accommodating the potential growth of an ecommerce application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Performance: MongoDB's document-based model provides fast read and write operations, making it suitable for high-throughput applications like ecommerce. It also supports indexing and aggregation, further enhancing performance.
 
-### `npm run build` fails to minify
+Developer Productivity: MongoDB's JSON-like documents align well with JavaScript, making it a natural choice for Node.js development. The document-oriented nature of MongoDB allows developers to work with data in a way that is familiar and comfortable.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-Errors:
-Pop up on left when sing out and then sign in
-Search only on page
-Left and right side is empty on Dashboard
-select number of items of one kind and icon over cart 
-
-
-Functionality
-Pagination + Implement search on backend
-Cart + Stripe
-
-Refresh issues
-Sessions
-product specific page
-Env variable
-github 
-deploy
+### Please note that you may need to replace `<repository-url>` and fill in the appropriate values for environment variables, such as `<your-firebase-api-key>`, `<your-stripe-public-key>`, `<your-backend-url>`, `<port-number>`, `<mongodb-uri>`, and `<your-stripe-secret-key>` based on your specific configuration.
