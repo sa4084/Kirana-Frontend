@@ -19,17 +19,15 @@ To run the React.js frontend of the Kirana application locally, follow these ste
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone <repository-url>
 Navigate to the frontend directory:
 
-bash
-Copy code
+
 cd frontend
 Install the dependencies:
 
-bash
-Copy code
+
 npm install
 Set up environment variables:
 
@@ -38,7 +36,7 @@ Create a .env file in the root of the frontend directory.
 Add the following environment variables and provide their respective values:
 
 makefile
-Copy code
+
 REACT_APP_FIREBASE_API_KEY=<your-firebase-api-key>
 REACT_APP_FIREBASE_AUTH_DOMAIN=<your-firebase-auth-domain>
 REACT_APP_FIREBASE_PROJECT_ID=<your-firebase-project-id>
@@ -49,8 +47,8 @@ REACT_APP_STRIPE_PUBLIC_KEY=<your-stripe-public-key>
 REACT_APP_BACKEND_URL=<your-backend-url>
 Start the local development server:
 
-bash
-Copy code
+
+
 npm start
 Open your web browser and visit http://localhost:3000 to see the Kirana application running locally.
 
@@ -59,18 +57,18 @@ To run the Node.js backend of the Kirana application locally, follow these steps
 
 Clone the repository:
 
-bash
-Copy code
+
+
 git clone <repository-url>
 Navigate to the backend directory:
 
-bash
-Copy code
+
+
 cd backend
 Install the dependencies:
 
-bash
-Copy code
+
+
 npm install
 Set up environment variables:
 
@@ -79,14 +77,14 @@ Create a .env file in the root of the backend directory.
 Add the following environment variables and provide their respective values:
 
 makefile
-Copy code
+
 PORT=<port-number>
 MONGODB_URI=<mongodb-uri>
 STRIPE_SECRET_KEY=<your-stripe-secret-key>
 Start the Node.js server:
 
-bash
-Copy code
+
+
 npm start
 The backend server will start running on the specified port.
 
