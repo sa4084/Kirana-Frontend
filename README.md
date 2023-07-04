@@ -1,5 +1,6 @@
 # Kirana
-
+## This is Kirana-Frontend.
+## Kirana Backend is here [https://github.com/sa4084/Kirana-Backend](https://github.com/sa4084/Kirana-Backend)
 Kirana is a fully functional ecommerce web application built with the MERN stack <b>(MongoDB, Express.js, React.js, Node.js) + Firebase Authentication + Stripe for Payments </b>. It offers a wide range of food items and grocery products for sale. The application utilizes Firebase Authentication for user login and registration, ensuring a secure and seamless user experience. The frontend is developed using React.js and Material UI, providing an appealing and user-friendly interface. The backend is powered by Node.js, enabling efficient server-side processing and handling API requests. MongoDB is chosen as the database for its flexibility and scalability, offering a NoSQL approach to data storage. Stripe is integrated into the application to handle secure payment transactions, ensuring a smooth checkout process.
 
 ## Demo
