@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Errors:
+Pop up on left when sing out and then sign in
+Search only on page
+Left and right side is empty on Dashboard
+select number of items of one kind and icon over cart 
+
+
+Functionality
+Pagination + Implement search on backend
+Cart + Stripe
+
+Refresh issues
+Sessions
+product specific page
+Env variable
+github 
+deploy
